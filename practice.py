@@ -1,13 +1,12 @@
-H, M = map(int, input().split())
-time = int(input())
+a, b, c = map(int, input().split())
 
-H += time // 60
-M += time % 60
-
-if (M >= 60) :
-    H += 1
-    M -= 60
-if (H >= 24) :
-    H -= 24
-
-print(H, M)
+if a == b == c:
+    print(10000 + a * 1000)
+elif a == b:
+    print(1000 + a * 100)
+elif b == c:
+    print(1000 + b * 100)
+elif a == c:
+    print(1000 + a * 100)
+else :
+    print(100 * max(a, b, c))
