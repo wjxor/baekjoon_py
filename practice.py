@@ -1,10 +1,6 @@
-N = int(input())
-num = list(map(int, input().split()))
-v = int(input())
+N, X = map(int, input().split())
+A = list(map(int, input().split()))
 
-count = 0
 for i in range(N):
-    if (num[i] == v):
-        count += 1
-
-print(count)
+    if (A[i] < X):
+        print(f"{A[i]}", end=" ")
