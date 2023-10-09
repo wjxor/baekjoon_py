@@ -1,7 +1,5 @@
-a = int(input())
+t = int(input())
 
-a = a // 4
-
-for i in range(a):
-    print("long", end=' ')
-print("int")
+for i in range(1, t + 1):
+   a, b = map(int, input().split())
+   print(f'Case #{i}: {a + b}')
