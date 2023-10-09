@@ -1,5 +1,7 @@
-t = int(input())
+while (True):
+    a, b = map(int, input().split())
 
-for i in range(t):
-    print(" " * (t - (i+1)), end="")
-    print("*" * (i+1))
+    if (a == 0 or b == 0):
+        break;
+
+    print(a + b)
