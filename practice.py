@@ -1,4 +1,5 @@
 t = int(input())
 
-for i in range(1, t+1):
-    print('*' * i)
+for i in range(t):
+    print(" " * (t - (i+1)), end="")
+    print("*" * (i+1))
