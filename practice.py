@@ -1,16 +1,10 @@
-N, M = map(int, input().split())
-# list 선언 후 각 번호에 해당되는 공 넣기
-basket = [i for i in range(1, N + 1)]
-temp = 0
+# 1에서 30까지 배열 생성
+stu = [i for i in range(1, 31)]
 
-for i in range(M):
-    i, j = map(int, input().split())
+# for loop로 받은 학번은 remove로 배열에서 제거
+for i in range(28):
+    asg = int(input())
+    stu.remove(asg)
 
-    # 교환 시작
-    temp = basket[i - 1]
-    basket[i - 1] = basket[j - 1]
-    basket[j - 1] = temp
-    # 교환 끝
-
-for i in range(N):
-    print(basket[i], end=' ')
+print(min(stu))
+print(max(stu))
