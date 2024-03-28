@@ -1,4 +1,3 @@
-S = input()
-i = int(input())
+D = input()
 
-print(S[i-1])
+print(len(D))
