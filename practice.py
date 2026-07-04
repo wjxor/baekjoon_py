@@ -1,9 +1,8 @@
-N = int(input())
-num = input()
-result = 0
+S = input()
+a = 'abcdefghijklmnopqrstuvwxyz'
 
-for i in range(N):
-    
-    result += int(num[i])
-
-print(result)
+for i in a:
+    if i in S:
+        print(S.index(i), end = ' ')
+    else:
+        print(-1, end= ' ')
